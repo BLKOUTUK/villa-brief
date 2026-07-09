@@ -92,6 +92,12 @@
   .videocard .play.tour svg { margin-left: 2px; }
   .videocard .wtxt strong { display: block; font-weight: 600; font-size: 0.98rem; }
   .videocard .wtxt span { font-size: 0.85rem; color: var(--sage); }
+  .welcome-embed { margin: 1.4rem 0 0; display: flex; gap: 1.2rem; align-items: center; flex-wrap: wrap; }
+  .welcome-embed .frame { flex: none; width: 280px; max-width: 78vw; aspect-ratio: 9 / 16; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); background: #000; }
+  .welcome-embed .frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .welcome-embed figcaption { flex: 1; min-width: 190px; }
+  .welcome-embed figcaption strong { display: block; font-weight: 600; font-size: 1rem; margin-bottom: 0.3rem; }
+  .welcome-embed figcaption span { font-size: 0.9rem; color: var(--sage); }
 
   section { padding: 2.4rem 0; border-top: 1px solid var(--line); }
   section:first-of-type { border-top: none; }
@@ -191,10 +197,15 @@
       <div><dt>Quote by</dt><dd>Fri 31 July 2026</dd></div>
     </dl>
 
-    <a class="videocard" href="https://www.youtube.com/watch?v=ndG56lvIoO0" target="_blank" rel="noopener" aria-label="Watch a short welcome video from Rob">
-      <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
-      <span class="wtxt"><strong>A quick hello from Rob — 20 seconds</strong><span>Watch on YouTube</span></span>
-    </a>
+    <figure class="welcome-embed">
+      <div class="frame">
+        <iframe src="https://www.youtube.com/embed/ndG56lvIoO0?rel=0" title="A short welcome from Rob" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+      </div>
+      <figcaption>
+        <strong>A quick hello from Rob</strong>
+        <span>Filmed on the roof of the house at Simon — about 20 seconds. Press play.</span>
+      </figcaption>
+    </figure>
   </header>
 
   <section>
