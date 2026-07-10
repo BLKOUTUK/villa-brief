@@ -169,6 +169,15 @@
   footer .row { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin: 0 0 0.9rem; }
   footer strong { color: var(--ink-soft); font-weight: 600; }
 
+  .worklist { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem 2rem; margin: 1rem 0 0; }
+  .wl-head { font-weight: 700; color: var(--terra); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 0.55rem; }
+  .checklist { list-style: none; padding-left: 0; margin: 0; }
+  .checklist li { margin: 0 0 0.5rem; }
+  .checklist label { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.95rem; color: var(--ink-soft); cursor: pointer; }
+  .checklist input { margin-top: 0.2rem; flex: none; }
+  .wl-seq { margin-top: 1.2rem; padding: 0.9rem 1.1rem; background: var(--surface); border-left: 3px solid var(--terra); border-radius: 0 6px 6px 0; font-size: 0.95rem; }
+  @media (max-width: 640px) { .worklist { grid-template-columns: 1fr; } }
+
   @media print {
     .topbar, .actions { display: none; }
     details { border: none; padding: 0; }
@@ -269,6 +278,38 @@
       <li><b>For opening:</b> a <b>hot tub on the master-suite deck</b> — supply and site it with its deck, electrics and plumbing. This is the Phase-0 water amenity.</li>
       <li><b>Later, from cashflow (quote separately so we can plan it):</b> the full <b>plunge pool</b>, the full <b>deck</b>, and the <b>outdoor kitchen</b>.</li>
     </ul>
+
+    <h3>Phase 0 working list — what we deliver ourselves</h3>
+    <p>To keep Phase 0 cost-effective and still to standard, we'll bring a <b>family working party</b> — Rob plus a couple of handy hands — for the finishing work on a scheduled visit. <b>Please exclude the “we deliver” items below from your quote</b> (or price them materials-only / light supervision if you'd rather we buy through you). Everything in the “you quote” list is notifiable, structural or life-safety and stays with your licensed trades.</p>
+    <div class="worklist">
+      <div>
+        <p class="wl-head">You quote — licensed trades</p>
+        <ul class="checklist">
+          <li><label><input type="checkbox"> Open the back wall for the garden sliders — lintel/beam, engineer sign-off</label></li>
+          <li><label><input type="checkbox"> Supply &amp; fit the sliders — impact-rated, to the opening</label></li>
+          <li><label><input type="checkbox"> Roof — translucent panel over the kitchen corner; a skylight to each bedroom; mount &amp; waterproof the solar zone</label></li>
+          <li><label><input type="checkbox"> Electrics — consumer unit, circuits, kitchen &amp; bathroom, solar/battery tie-in</label></li>
+          <li><label><input type="checkbox"> Plumbing — consolidated bathroom suite + laundry, kitchen</label></li>
+          <li><label><input type="checkbox"> Solar + battery — install &amp; commission</label></li>
+          <li><label><input type="checkbox"> Septic/drainage — check it carries the added load; upgrade if needed</label></li>
+          <li><label><input type="checkbox"> Masonry — square off the three arches; any block/render repair</label></li>
+        </ul>
+      </div>
+      <div>
+        <p class="wl-head">We deliver — family working party</p>
+        <ul class="checklist">
+          <li><label><input type="checkbox"> Strip-out &amp; clearance — pull old fittings, clear rooms and grounds</label></li>
+          <li><label><input type="checkbox"> Surface prep — fill, sand, seal walls and timber</label></li>
+          <li><label><input type="checkbox"> Paint — whitewash + burnt-yellow accents, and the one dark kitchen</label></li>
+          <li><label><input type="checkbox"> Verandah/deck — repair, sand, oil/stain, rails</label></li>
+          <li><label><input type="checkbox"> Fit-out (non-wired/non-plumbed) — doors, architraves, skirting, wardrobes, shelving, shutters, blinds</label></li>
+          <li><label><input type="checkbox"> FF&amp;E — assemble &amp; place beds, furniture, flat-pack kitchen units, soft furnishings; style to showhome</label></li>
+          <li><label><input type="checkbox"> Landscaping — clearance and privacy planting; ground the gather/play zones</label></li>
+          <li><label><input type="checkbox"> Snagging — final checks and touch-ups</label></li>
+        </ul>
+      </div>
+    </div>
+    <p class="wl-seq"><b>Sequence matters:</b> the working party can only finish after your <b>first fix</b> — wall opened, wiring and plumbing roughed in, roof on. So either we come <b>after first fix</b> (we prep → paint → fit-out → FF&amp;E while you second-fix around us), or we come <b>early for the dirty jobs</b> (strip-out, clearance, deck prep, landscaping) alongside you, then return to finish.</p>
 
     <h3>How to quote it</h3>
     <ul>
